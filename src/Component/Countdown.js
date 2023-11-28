@@ -1,7 +1,7 @@
-import React from 'react'
 import props from 'react'
 
-export default function Countdown() {
+export default function Countdown(props) {
+    
   return (
     <>
     <center>
@@ -12,24 +12,25 @@ export default function Countdown() {
     <div className='col-sm-4' >
         <div style={{backgroundColor:'blue', height: '250px', width: '200px'}}>
         <h1>Hour</h1>
-        <p> {props.type}</p>
+        <label value={0}></label>
         </div>
     </div>
     <div className='col-sm-4' >
         <div style={{backgroundColor:'blue', height: '250px', width: '200px'}}>
         <h1>Minuter</h1>
+        <p>{props.Menutes}</p>
         </div>
     </div>
     <div className='col-sm-4' >
         <div style={{backgroundColor:'blue', height: '250px', width: '200px'}}>
-        <h1>Second</h1>
+            <h1>Sceconds</h1>
+        <p id='op'>{props.Seconds}</p>
         </div>
     </div>
 
     </div></center>
     
     </>
-  )
-  const as =type ="ashsihs";
+  );
 }
  
